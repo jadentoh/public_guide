@@ -35,7 +35,7 @@
       - Enter the command 'ssh-keygen -y -f vesta-keyfile > keyfile_pub'
       - Enter the command 'ssh-keygen -l -f vesta-keyfile' to check the key is generated
    2. Log-in to Hub
-      - Enter the command 'ssh vesta@IP_ADDR -p 2867 -i .ssh\vesta-keyfile'
+      - Enter the command 'ssh vesta@IP_ADDR -p <PORT_NUMBER> -i .ssh\vesta-keyfile'
       - Enter key file password (see password file)
 4. Transfer Ocupdater-hubctrl.zip into Hub
    1. Setup WinSCP

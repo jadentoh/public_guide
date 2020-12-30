@@ -1,0 +1,42 @@
+# Hub controller-installation and configuration
+
+1. Make sure the current hub-controller is stopped 
+
+	- sudo systemctl stop controller.service
+	- sudo systemctl stop controller_web.service
+	- go to <app_path>/hub-controller/bin and sudo ./uninstall
+	
+2. remove the current hub-controller directory on hub
+3. copy the latest hub-controller zip file to the hub to /to home directory of vesta
+4. copy the hub-controller zip file to the <app_path>
+5. unzip the hub-controller zip file and go to hub-controller folder and run -> sudo ./insatll.sh
+
+# Octopus-installation and configuration
+
+1. Make sure the current octopus is stopped 
+
+	- go to <app_path>/octopus-1.2.8/bin and ./stop
+	- check the status by ./status
+
+		        or
+
+	- sudo systemctl stop octopus.service
+
+2. remove the current octopus directory on hub
+3. copy the latest octopus zip and octopus.service to the hub to home directory of vesta
+4. copy the octopus zip file to the <app_path>
+5. copy the octopus.service file to the /lib/systemd/system/ 
+6. makesure to remove the .m2 file in the root before unzip
+7. unzip the octopus file
+	
+## octopus-Configurations
+
+    # check the internal guild
+	
+
+Once configurations are done ->
+
+8. reload the daemon - > sudo systemctl daemon-reload
+9. enable the octopus service - >  sudo systemctl enable octopus.service
+10. start the octopus service - >  sudo systemctl start octopus.service
+11. check octopus status - > sudo systemctl status octopus.service

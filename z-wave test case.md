@@ -5,11 +5,11 @@ syntax: sensor/device [Working/Not working][REASON]
 1. Test Case 1: 700 Series Z-Stick with 700 Series device or sensor (US frequency)
     1. Door sensor [Working]
     2. Temperature and humidity sensor [Working][portal UI showing in fahrenheit]
-    3. Smart switch [Not working][Able to connect/pair but show up 3 devices on the portal]
+    3. Smart switch [Not working][Able to connect/pair but showing 3 devices on the portal]
 2. Test Case 2: 700 Series Z-Stick with 500 Series device or sensor (US frequency)
     1. Door sensor [Working]
     2. Temperature and humidity sensor [Not working][Z-wave portal UI display incorrect sensor type and not showing data]
-    3. Smart switch [Not working][Able to connect/pair but show up 3 devices on the portal]
+    3. Smart switch [Not working][Able to connect/pair but showing 3 devices on the portal]
 3. Test Case 3: 700 Series Z-Stick with 500 Series device or sensor (Korean frequency)
     1. Door sensor [Working]
     2. Tri sensor [Working]
